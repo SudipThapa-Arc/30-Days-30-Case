@@ -1,0 +1,93 @@
+html {
+    font-size: 10px;
+    background: url('/Day_1/background.jpg') bottom center;
+    background-size: cover;
+    background-attachment: fixed; /* Ensures background remains fixed while scrolling */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.keys {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+    padding: 3rem; 
+    background: rgba(0, 0, 0, 0.6); /* Subtle overlay for better contrast */
+    box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.7); 
+    flex-wrap: nowrap; /* Prevents wrapping to keep all keys in the same row */
+    overflow-x: auto; /* Allows horizontal scrolling if buttons overflow the screen */
+}
+
+.key {
+    border: .4rem solid #636363; /* Border color matching the specified grey */
+    border-radius: 1rem; /* Smoother corners for a more modern appearance */
+    font-size: 2rem; /* Increased font size for better readability */
+    padding: 1.5rem 1rem; /* Added more padding for a balanced look */
+    transition: all 0.2s ease; /* Smoother and slightly longer transition */
+    width: 12rem; /* Increased width for better visual appeal */
+    text-align: center;
+    color: #D1D1D1; /* Softer grey for text */
+    background: #636363; /* Background color for keys */
+    text-shadow: 0 0 .75rem black; /* Slightly stronger text shadow */
+    cursor: pointer; /* Adds a pointer cursor for interactivity */
+    flex-shrink: 0; /* Prevents keys from shrinking when there's overflow */
+}
+
+.key:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+    background: #85C7F2; /* Light blue background on hover */
+    color: #636363; /* Dark grey text color on hover */
+}
+
+.playing {
+    transform: scale(1.15); /* Enhanced scale effect for key press */
+    border-color: #C8D96F; /* Changed to the greenish-yellow */
+    box-shadow: 0 0 1.5rem #C8D96F, inset 0 0 1rem rgba(0, 0, 0, 0.8); /* Added inset shadow for depth */
+    background: #85C7F2; /* Light blue background for active keys */
+    color: #636363; /* Dark grey text color for active keys */
+}
+
+kbd {
+    display: block;
+    font-size: 4.5rem; /* Slightly larger font for the key label */
+    font-weight: bold; /* Bolder text for emphasis */
+    color: #D1D1D1; /* Matching text color with overall design */
+}
+
+.sound {
+    font-size: 1.4rem; /* Increased font size */
+    text-transform: uppercase;
+    letter-spacing: .15rem; /* Slightly increased letter spacing */
+    color: #C8D96F; /* Greenish-yellow color for the sound text */
+    font-weight: 600; /* Added weight for better visibility */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    color: #D1D1D1; /* Soft grey text color */
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.footer a {
+    color: #85C7F2; /* Light blue color for the link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #C8D96F; /* Greenish-yellow on hover */
+}
