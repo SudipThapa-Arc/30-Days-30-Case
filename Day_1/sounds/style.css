@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    background: url('/Day_1/background.jpg') bottom center;
+    background: url('background.jpg') bottom center;
     background-size: cover;
     background-attachment: fixed; /* Ensures background remains fixed while scrolling */
     overflow: hidden; /* Prevents scrolling */
